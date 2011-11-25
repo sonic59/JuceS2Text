@@ -13,15 +13,15 @@
 
 
 //==============================================================================
-class JuceS1TextApplication  : public JUCEApplication
+class JuceS2TextApplication  : public JUCEApplication
 {
 public:
     //==============================================================================
-    JuceS1TextApplication()
+    JuceS2TextApplication()
     {
     }
 
-    ~JuceS1TextApplication()
+    ~JuceS2TextApplication()
     {
     }
 
@@ -71,4 +71,4 @@ private:
 
 //==============================================================================
 // This macro generates the main() routine that starts the app.
-START_JUCE_APPLICATION(JuceS1TextApplication)
+START_JUCE_APPLICATION(JuceS2TextApplication)
