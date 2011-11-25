@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="ThqZuA" name="JuceS2Text" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.JuceS2Text" jucerVersion="3.0.0">
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" objCExtraSuffix="arWvlK" juceFolder="../juce"/>
+    <VS2008 targetFolder="Builds/VisualStudio2008" libraryType="1" juceFolder="../juce"/>
+    <VS2010 targetFolder="Builds/VisualStudio2010" libraryType="1" juceFolder="../juce"/>
+    <LINUX_MAKE targetFolder="Builds/Linux" juceFolder="../juce"/>
+  </EXPORTFORMATS>
+  <CONFIGURATIONS>
+    <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="JuceS2Text"
+                   osxSDK="default" osxCompatibility="default" osxArchitecture="default"/>
+    <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="JuceS2Text"
+                   osxSDK="default" osxCompatibility="default" osxArchitecture="default"/>
+  </CONFIGURATIONS>
+  <MAINGROUP id="HhfMCD" name="JuceS2Text">
+    <GROUP id="{AFA005A6-2373-C9FA-9F69-A6367F0F9586}" name="Source">
+      <FILE id="Q9y8Im" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_audio" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_USE_DIRECTWRITE="enabled"/>
+</JUCERPROJECT>
