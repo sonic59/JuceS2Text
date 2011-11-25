@@ -73,6 +73,8 @@ namespace DirectWriteTypeLayout
                 ++currentLine;
 
                 // The x value is only correct when dealing with LTR text
+                if (currentLine == layout->getNumLines())
+                    return S_OK;
                 layout->getLine (currentLine).lineOrigin = Point<float> (baselineOriginX, baselineOriginY);
             }
 
