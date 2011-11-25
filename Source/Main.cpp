@@ -9,18 +9,19 @@
 */
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "MainWindow.h"
 
 
 //==============================================================================
-class JuceS2TextApplication  : public JUCEApplication
+class JuceS1TextApplication  : public JUCEApplication
 {
 public:
     //==============================================================================
-    JuceS2TextApplication()
+    JuceS1TextApplication()
     {
     }
 
-    ~JuceS2TextApplication()
+    ~JuceS1TextApplication()
     {
     }
 
@@ -28,13 +29,13 @@ public:
     void initialise (const String& commandLine)
     {
         // Do your application's initialisation code here..
-        
+        mainWindow = new MainAppWindow();
     }
 
     void shutdown()
     {
         // Do your application's shutdown code here..
-        
+        mainWindow = 0;
     }
 
     //==============================================================================
@@ -65,9 +66,9 @@ public:
     }
 
 private:
-    
+    ScopedPointer <MainAppWindow> mainWindow;
 };
 
 //==============================================================================
 // This macro generates the main() routine that starts the app.
-START_JUCE_APPLICATION(JuceS2TextApplication)
+START_JUCE_APPLICATION(JuceS1TextApplication)
